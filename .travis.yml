@@ -1,0 +1,10 @@
+language: cpp
+compiler:
+ - g++
+os:
+ - linux
+sudo: required
+dist: trusty
+script: ./configure.sh
+
+
