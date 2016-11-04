@@ -1,25 +1,23 @@
 #include "Vector2.h"
 
-Vector2::Vector2()
+Vector2::Vector2() :x(0), y(0)
 {
 }
 
-Vector2::Vector2(float _x, float _y)
+Vector2::Vector2(float x, float y) : x(x), y(y)
 {
-	x = _x;
-	y = _y;
 }
 
 float Vector2::Magnitude()
 {
-
+	return (sqrt(x*x + y*y));
 }
 
 void Vector2::Normalize()
 {
 	float length = (sqrt(x*x + y*y));
-	x = x / length;
-	y = y / length;
+	x /= length;
+	y /= length;
 }
 
 Vector2 Vector2::GetNormalized()

@@ -19,6 +19,7 @@ public:
     float Magnitude();
 
     void Normalize();
+
 	Vector2 GetNormalized();
 
 	Vector2 operator+(const Vector2& second);
