@@ -51,3 +51,23 @@ Vector3 Vector3::operator/(const Vector3 & second)
 {
 	return Vector3(x / second.x, y / second.y, z / second.z);
 }
+
+Vector3 Vector3::operator+(const float & second)
+{
+	return Vector3(x + second,y + second,z + second);
+}
+
+Vector3 Vector3::operator-(const float & second)
+{
+	return Vector3(x - second, y - second, z - second);
+}
+
+Vector3 Vector3::operator*(const float & second)
+{
+	return Vector3(x * second, y * second, z * second);
+}
+
+Vector3 Vector3::operator/(const float & second)
+{
+	return Vector3(x / second, y / second, z / second);
+}

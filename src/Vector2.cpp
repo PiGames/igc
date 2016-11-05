@@ -46,3 +46,23 @@ Vector2 Vector2::operator/(const Vector2 & second)
 {
 	return Vector2(x / second.x, y / second.y);
 }
+
+Vector2 Vector2::operator+(const float & second)
+{
+	return Vector2(x + second,y + second);
+}
+
+Vector2 Vector2::operator-(const float & second)
+{
+	return Vector2(x - second, y - second);
+}
+
+Vector2 Vector2::operator*(const float & second)
+{
+	return Vector2(x * second, y * second);
+}
+
+Vector2 Vector2::operator/(const float & second)
+{
+	return Vector2(x / second, y / second);
+}

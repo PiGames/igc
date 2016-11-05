@@ -20,4 +20,9 @@ public:
 	Vector3 operator-(const Vector3& second);
 	Vector3 operator*(const Vector3& second);
 	Vector3 operator/(const Vector3& second);
+
+	Vector3 operator+(const float& second);
+	Vector3 operator-(const float& second);
+	Vector3 operator*(const float& second);
+	Vector3 operator/(const float& second);
 };

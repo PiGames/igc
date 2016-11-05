@@ -27,5 +27,11 @@ public:
 	Vector2 operator*(const Vector2& second);
 	Vector2 operator/(const Vector2& second);
 
+	Vector2 operator+(const float& second);
+	Vector2 operator-(const float& second);
+	Vector2 operator*(const float& second);
+	Vector2 operator/(const float& second);
+
+
 
 };
