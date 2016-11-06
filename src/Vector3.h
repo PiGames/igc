@@ -10,5 +10,19 @@ public:
     Vector3(float x, float y, float z);
     Vector3(Vector2, float z = 0.0f);
 
-    // todo like in Vector2
+	float Magnitude();
+
+	void Normalize();
+
+	Vector3 GetNormalized();
+
+	Vector3 operator+(const Vector3& second);
+	Vector3 operator-(const Vector3& second);
+	Vector3 operator*(const Vector3& second);
+	Vector3 operator/(const Vector3& second);
+
+	Vector3 operator+(const float& second);
+	Vector3 operator-(const float& second);
+	Vector3 operator*(const float& second);
+	Vector3 operator/(const float& second);
 };

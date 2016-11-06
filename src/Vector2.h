@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cmath>
 
 class Vector2
 {
@@ -13,17 +14,24 @@ public:
     static Vector2 right;
 
     Vector2();
-    Vector(float x, float y);
+    Vector2(float x, float y);
 
     float Magnitude();
-    float DotProduct();
 
     void Normalize();
-    Vector2 GetNormalized();
 
-    // operators: +, -, *, /
-    /*
-        Info: in next version Vector2 have to be compatibille with sfml & box2d
-        vectors
-    */
+	Vector2 GetNormalized();
+
+	Vector2 operator+(const Vector2& second);
+	Vector2 operator-(const Vector2& second);
+	Vector2 operator*(const Vector2& second);
+	Vector2 operator/(const Vector2& second);
+
+	Vector2 operator+(const float& second);
+	Vector2 operator-(const float& second);
+	Vector2 operator*(const float& second);
+	Vector2 operator/(const float& second);
+
+
+
 };
